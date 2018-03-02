@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns:th="http://www.thymeleaf.org">
+<head th:include="pala :: head">
+    <title>Otsikko</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<h1>Maat</h1>
+
+<h1>Form</h1>
+    <form action="#" th:action="@{/greeting}" th:object="${/greeting}" method="post">
+
+        <p>Message: <input type="text" th:field="*{KyselytKontrolleri.kaupunki}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
+</body>
+</html>

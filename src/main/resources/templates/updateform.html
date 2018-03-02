@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns:th="http://www.thymeleaf.org">
+<head th:include="pala :: head">
+    <title>Otsikko</title>
+    <meta charset="utf-8"/>
+</head>
+<body class="bg">
+ 
+<div class="mar">
+<div class="container-fluid bg-1 text-center">
+<div class="keskivalk">
+
+<h1 th:text="'&nbsp;&nbsp;&nbsp;Update '+${maat.get(0).name}+'&nbsp;&nbsp;&nbsp;'" ></h1>
+<br></br>
+       
+          <form name="Name Input Form" action="/kyselyt/update">
+
+ 
+<input type="text" name="name" th:value="${maat.get(0).name}" /><br></br>
+     <p>name</p><input type="text" name="localname" th:value="${maat.get(0).localname}" /><br></br>
+           
+        <p>local name</p>   <input type="text" name="population" th:value="${maat.get(0).population}" /><br></br>
+         <p>population</p>  <input type="text" name="headofstate" th:value="${maat.get(0).headofstate}" /><br></br> -->
+       <p>head of state</p>    <input  name="code" th:value="${maat.get(0).code}" readonly="readonly"/>
+    <p>country code</p>
+<br></br>
+
+        <p><input type="submit" value="Update" /> <input type="reset" value="Clear" /></p>
+        </form>
+
+<h3> <a href="/update">Back</a> </h3>
+<h3> <a href="/maasivut">All countries</a> </h3>
+</div>
+</div>
+</div>
+</body>
+</html>

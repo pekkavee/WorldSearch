@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns:th="http://www.thymeleaf.org">
+<head th:include="pala :: head">
+    <title>Otsikko</title>
+    <meta charset="utf-8"/>
+</head>
+<body class="bg">
+ 
+<div class="mar">
+<div class="container-fluid bg-1 text-center">
+<div class="keskivalk">
+
+<h1>&nbsp;&nbsp;&nbsp;Update Country&nbsp;&nbsp;&nbsp;</h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search by name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+   
+       
+          <form name="Name Input Form" action="/kyselyt/pophaku2">
+
+    <input type="text" name="kaupunki"/><br></br>
+          
+<br></br>
+<br></br>
+        <p><input type="submit" value="Search" /> <input type="reset" value="Clear" /></p>
+        </form>
+
+
+<h3> <a href="/maasivut">All countries</a> </h3>
+<h3> <a href="/kyselyt">Back</a> </h3>
+</div>
+</div>
+</div>
+</body>
+</html>

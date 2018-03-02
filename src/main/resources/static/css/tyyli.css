@@ -1,0 +1,51 @@
+
+.sivulkm {
+    text-align: center;
+}
+.sivutus,
+table {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+.bg {
+    /* The image used */
+background-image: url("/images/BlankMap-World-noborders.png");
+
+ 
+    background-size: cover;
+   background-color: #cccccc;
+     
+  
+}
+.bg2 {
+    /* The image used */
+background-image: url("/images/oxford-29781.png");
+
+ 
+    background-size: 100%;
+   
+     
+  
+}
+.mar{
+margin:50px;
+}
+.keski{
+	text-align: center;
+}
+.shadow{
+	color:black;
+ text-shadow: 0 0 5px #000000;
+}
+.keskivalk{
+	
+
+	
+	background: rgba(240,240,240, 0.8);
+	
+	
+
+	display: inline-block;
+}

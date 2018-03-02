@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns:th="http://www.thymeleaf.org">
+<head th:include="pala :: head">
+    <title>Otsikko</title>
+    <meta charset="utf-8"/>
+</head>
+<body class="bg2">
+<div class="keski">
+
+<h1>Kaupungit</h1>
+<table class="table-bordered table-striped">
+    <tr><th>Nimi</th><th>Maa</th><th>Alue</th><th>Populaatio</th></tr>
+    <tr th:each="city : ${kaupungit}">
+        <td th:text="${city.name}"></td>
+        <td th:text="|${city.country.name} (${city.country.localname})|"></td>
+        <td th:text="${city.district.replace('Ã¤', 'a')}"></td>
+        <td th:text="${city.population}"></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
