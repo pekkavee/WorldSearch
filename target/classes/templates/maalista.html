@@ -54,6 +54,8 @@
 
 <h4 th:text="'Life expectancy: '+${maat.get(0).lifeexpectancy}"></h4>
 <h4 th:text="'Order by LE: '+${numero.getNumero2()}+' ('+${numero.getYht()}+') '"></h4>
+<br></br>
+<h4> <a th:href="'http://www.wikipedia.org/wiki/'+${maat.get(0).name}">Wikipedia</a></h4>
 
 <br></br>
 </div>
